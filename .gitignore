@@ -1,1 +1,5 @@
+# Webstorm indexes file
+.idea
+
+# Node modules packages
 node_modules/
