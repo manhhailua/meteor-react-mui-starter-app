@@ -6,6 +6,7 @@ import React, { Component } from 'react';
 import Paper from 'material-ui/Paper';
 import { BottomNavigation, BottomNavigationItem } from 'material-ui/BottomNavigation';
 import FontIcon from 'material-ui/FontIcon';
+import './BottomBar.css';
 
 class BottomBar extends Component {
 
@@ -23,7 +24,7 @@ class BottomBar extends Component {
 
   render() {
     return (
-      <Paper zDepth={1}>
+      <Paper className="bottom-bar" zDepth={1}>
         <BottomNavigation selectedIndex={this.state.selectedIndex}>
           <BottomNavigationItem
             label="Home"
