@@ -5,6 +5,8 @@
 import React, { Component } from 'react';
 import Paper from 'material-ui/Paper';
 import AppBar from 'material-ui/AppBar';
+import FontIcon from 'material-ui/FontIcon';
+import IconButton from 'material-ui/IconButton';
 import LeftDrawer from '../LeftDrawer';
 
 class TopBar extends Component {
@@ -25,8 +27,12 @@ class TopBar extends Component {
     return (
       <Paper zDepth={0}>
         <AppBar
-          title="App"
-          iconClassNameRight="muidocs-icon-navigation-expand-more"
+          title="MRM Start App"
+          iconElementRight={
+            <IconButton>
+              <FontIcon className="material-icons">more_vert</FontIcon>
+            </IconButton>
+          }
           onLeftIconButtonTouchTap={() => this.toggleLeftDrawer()}
         />
         <LeftDrawer
