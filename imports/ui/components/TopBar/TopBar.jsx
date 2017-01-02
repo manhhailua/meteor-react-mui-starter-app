@@ -76,7 +76,7 @@ class TopBar extends Component {
             />
             <ListItem
               primaryText="List Item"
-              leftIcon={<FontIcon className="material-icons">settings</FontIcon>}
+              leftIcon={<FontIcon className="material-icons">grade</FontIcon>}
             />
             <Divider />
 
