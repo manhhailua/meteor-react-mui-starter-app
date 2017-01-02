@@ -8,7 +8,11 @@ import AppBar from 'material-ui/AppBar';
 import FontIcon from 'material-ui/FontIcon';
 import IconButton from 'material-ui/IconButton';
 import Drawer from 'material-ui/Drawer';
-import MenuItem from 'material-ui/MenuItem';
+import List from 'material-ui/List/List';
+import ListItem from 'material-ui/List/ListItem';
+import Divider from 'material-ui/Divider';
+import Avatar from 'material-ui/Avatar';
+import './TopBar.css';
 
 class TopBar extends Component {
 
@@ -26,7 +30,8 @@ class TopBar extends Component {
 
   render() {
     return (
-      <Paper zDepth={0}>
+      <Paper>
+        {/* Main Application Bar */}
         <AppBar
           title="MRM Start App"
           iconElementRight={
@@ -36,13 +41,26 @@ class TopBar extends Component {
           }
           onLeftIconButtonTouchTap={() => this.toggleLeftDrawer()}
         />
+
+        {/* Left Drawer */}
         <Drawer
-          open={this.state.isOpened}
+          open={this.state.isLeftDrawerOpened}
           docked={false}
           onRequestChange={() => this.toggleLeftDrawer()}
         >
-          <MenuItem>Menu Item</MenuItem>
-          <MenuItem>Menu Item 2</MenuItem>
+          {/* Main Menu */}
+          <List>
+            {/* User Avatar */}
+            <ListItem
+              disabled
+              leftAvatar={
+                <Avatar icon={<FontIcon className="material-icons">face</FontIcon>} />
+              }
+              primaryText="Your Name"
+              secondaryText="yourEmail@mail.com"
+            />
+            <Divider />
+          </List>
         </Drawer>
       </Paper>
     );
