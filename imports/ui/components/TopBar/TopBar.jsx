@@ -7,7 +7,8 @@ import Paper from 'material-ui/Paper';
 import AppBar from 'material-ui/AppBar';
 import FontIcon from 'material-ui/FontIcon';
 import IconButton from 'material-ui/IconButton';
-import LeftDrawer from '../LeftDrawer';
+import Drawer from 'material-ui/Drawer';
+import MenuItem from 'material-ui/MenuItem';
 
 class TopBar extends Component {
 
@@ -35,9 +36,14 @@ class TopBar extends Component {
           }
           onLeftIconButtonTouchTap={() => this.toggleLeftDrawer()}
         />
-        <LeftDrawer
-          isOpened={this.state.isLeftDrawerOpened}
-        />
+        <Drawer
+          open={this.state.isOpened}
+          docked={false}
+          onRequestChange={() => this.toggleLeftDrawer()}
+        >
+          <MenuItem>Menu Item</MenuItem>
+          <MenuItem>Menu Item 2</MenuItem>
+        </Drawer>
       </Paper>
     );
   }
