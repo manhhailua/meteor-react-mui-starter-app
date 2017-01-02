@@ -57,9 +57,42 @@ class TopBar extends Component {
                 <Avatar icon={<FontIcon className="material-icons">face</FontIcon>} />
               }
               primaryText="Your Name"
-              secondaryText="yourEmail@mail.com"
+              secondaryText="your-email@mail.com"
             />
             <Divider />
+
+            {/* Main Menu's Items */}
+            <ListItem
+              primaryText="List Item"
+              leftIcon={<FontIcon className="material-icons">inbox</FontIcon>}
+            />
+            <ListItem
+              primaryText="List Item"
+              leftIcon={<FontIcon className="material-icons">local_offer</FontIcon>}
+            />
+            <ListItem
+              primaryText="List Item"
+              leftIcon={<FontIcon className="material-icons">shopping_cart</FontIcon>}
+            />
+            <ListItem
+              primaryText="List Item"
+              leftIcon={<FontIcon className="material-icons">settings</FontIcon>}
+            />
+            <Divider />
+
+            {/* Secondary Menu's Items */}
+            <ListItem
+              primaryText="Settings"
+              leftIcon={<FontIcon className="material-icons">settings</FontIcon>}
+            />
+            <ListItem
+              primaryText="Help & feedback"
+              leftIcon={<FontIcon className="material-icons">help</FontIcon>}
+            />
+            <ListItem
+              primaryText="Logout"
+              leftIcon={<FontIcon className="material-icons">remove_circle_outline</FontIcon>}
+            />
           </List>
         </Drawer>
       </Paper>
