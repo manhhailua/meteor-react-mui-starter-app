@@ -1,5 +1,7 @@
 {
-  "name": "public",
+  "name": "meteor-react-mui-starter-app",
+  "author": "Manhhailua <manhhailua@gmail.com>",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "start": "meteor run",
