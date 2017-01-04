@@ -5,7 +5,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import App from '../imports/ui/components/App.jsx';
+
+import Routes from '../imports/routes';
 
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
@@ -14,7 +15,7 @@ injectTapEventPlugin();
 Meteor.startup(() => {
   render(
     <MuiThemeProvider>
-      <App />
+      <Routes />
     </MuiThemeProvider>,
     document.getElementById('app'),
   );

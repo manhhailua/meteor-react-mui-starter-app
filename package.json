@@ -13,6 +13,7 @@
     "meteor-node-stubs": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-router": "^3.0.0",
     "react-tap-event-plugin": "latest"
   },
   "devDependencies": {
