@@ -3,6 +3,7 @@
  */
 
 import React, { Component } from 'react';
+import { browserHistory } from 'react-router';
 import Paper from 'material-ui/Paper';
 import { BottomNavigation, BottomNavigationItem } from 'material-ui/BottomNavigation';
 import FontIcon from 'material-ui/FontIcon';
@@ -29,17 +30,26 @@ class BottomBar extends Component {
           <BottomNavigationItem
             label="Home"
             icon={<FontIcon className="material-icons">home</FontIcon>}
-            onTouchTap={() => this.select(0)}
+            onTouchTap={() => {
+              this.select(0);
+              browserHistory.push('/');
+            }}
           />
           <BottomNavigationItem
             label="Shopping"
             icon={<FontIcon className="material-icons">shopping_cart</FontIcon>}
-            onTouchTap={() => this.select(1)}
+            onTouchTap={() => {
+              this.select(1);
+              browserHistory.push('/shopping');
+            }}
           />
           <BottomNavigationItem
             label="Order"
             icon={<FontIcon className="material-icons">local_offer</FontIcon>}
-            onTouchTap={() => this.select(2)}
+            onTouchTap={() => {
+              this.select(2);
+              browserHistory.push('/order');
+            }}
           />
         </BottomNavigation>
       </Paper>
