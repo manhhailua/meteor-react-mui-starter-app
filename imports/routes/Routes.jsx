@@ -10,6 +10,8 @@ import { Router, Route, browserHistory } from 'react-router';
 import App from '../ui/components/App.jsx';
 import Home from '../ui/pages/Home.jsx';
 import Shopping from '../ui/pages/Shopping.jsx';
+import Order from '../ui/pages/Order.jsx';
+import Page404 from '../ui/pages/404.jsx';
 
 class Routes extends Component {
   render() {
@@ -18,6 +20,8 @@ class Routes extends Component {
         <Route path="/" component={App}>
           <Route path="home" component={Home} />
           <Route path="shopping" component={Shopping} />
+          <Route path="order" component={Order} />
+          <Route path="*" component={Page404} />
         </Route>
       </Router>
     );
