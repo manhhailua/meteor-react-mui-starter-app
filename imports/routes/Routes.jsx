@@ -5,7 +5,7 @@
 /* eslint-disable import/prefer-default-export */
 
 import React, { Component } from 'react';
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route, Redirect, browserHistory } from 'react-router';
 
 import App from '../ui/components/App.jsx';
 import Home from '../ui/pages/Home.jsx';
@@ -23,6 +23,7 @@ class Routes extends Component {
           <Route path="order" component={Order} />
           <Route path="*" component={Page404} />
         </Route>
+        <Redirect from="/" to="/home" />
       </Router>
     );
   }

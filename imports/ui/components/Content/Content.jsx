@@ -15,8 +15,6 @@ class Content extends Component {
   render() {
     return (
       <Paper className="content">
-        <p>Welcome to a meteor stater app.</p>
-        <p>I am using React and Material-UI to be what being displayed.</p>
         {this.props.children}
       </Paper>
     );
