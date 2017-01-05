@@ -6,4 +6,6 @@
   right: 0;
   bottom: 0;
   left: 0;
+  height: calc(100% - 64px - 56px);
+  overflow-y: scroll;
 }
