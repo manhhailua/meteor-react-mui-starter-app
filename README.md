@@ -11,6 +11,12 @@ Ensure that you have `git` and `meteor` installed.
 
 ```
 git clone https://github.com/manhhailua/meteor-react-mui-starter-app.git
+
 cd meteor-react-mui-starter-app/
+
 meteor create .
+
+meteor npm install
+
+meteor
 ```
