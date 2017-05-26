@@ -5,12 +5,15 @@
 import Paper from 'material-ui/Paper';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import './Content.css';
+import './Content.scss';
 
 class Content extends Component {
 
   static propTypes = {
-    children: PropTypes.element.isRequired,
+    children: PropTypes.oneOfType([
+      PropTypes.array,
+      PropTypes.element,
+    ]).isRequired,
   };
 
   render() {

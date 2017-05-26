@@ -2,17 +2,17 @@
  * Created by manhhailua on 1/1/17.
  */
 
-import React, { Component } from 'react';
-import Paper from 'material-ui/Paper';
 import AppBar from 'material-ui/AppBar';
+import Avatar from 'material-ui/Avatar';
+import Divider from 'material-ui/Divider';
+import Drawer from 'material-ui/Drawer';
 import FontIcon from 'material-ui/FontIcon';
 import IconButton from 'material-ui/IconButton';
-import Drawer from 'material-ui/Drawer';
 import List from 'material-ui/List/List';
 import ListItem from 'material-ui/List/ListItem';
-import Divider from 'material-ui/Divider';
-import Avatar from 'material-ui/Avatar';
-import './TopBar.css';
+import Paper from 'material-ui/Paper';
+import React, { Component } from 'react';
+import './TopBar.scss';
 
 class TopBar extends Component {
 

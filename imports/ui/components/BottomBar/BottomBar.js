@@ -8,7 +8,7 @@ import Paper from 'material-ui/Paper';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
-import './BottomBar.css';
+import './BottomBar.scss';
 
 class BottomBar extends Component {
 
