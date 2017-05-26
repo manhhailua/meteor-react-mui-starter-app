@@ -2,7 +2,6 @@
   "name": "meteor-react-mui-starter-app",
   "author": "Manhhailua <manhhailua@gmail.com>",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "start": "meteor run",
     "lint": "eslint .",
@@ -13,7 +12,7 @@
     "meteor-node-stubs": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-router": "^3.0.0",
+    "react-router": "latest",
     "react-tap-event-plugin": "latest"
   },
   "devDependencies": {
@@ -24,7 +23,7 @@
     "eslint-config-airbnb": "latest",
     "eslint-import-resolver-meteor": "latest",
     "eslint-plugin-import": "latest",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-jsx-a11y": "latest",
     "eslint-plugin-meteor": "latest",
     "eslint-plugin-react": "latest"
   }
