@@ -14,9 +14,9 @@ git clone https://github.com/manhhailua/meteor-react-mui-starter-app.git
 
 cd meteor-react-mui-starter-app/
 
-meteor create .
+meteor npm install -g yarn
 
-meteor npm install
+meteor yarn install
 
 meteor
 ```
