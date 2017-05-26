@@ -2,10 +2,11 @@
 
 This project is to create a codebase for every app use stack Meteor + React + Material-UI.
 
-### Screen shot
-<img src="https://github.com/manhhailua/meteor-react-mui-starter-app/raw/master/public/screen-shot.png" alt="mobile-screen-shot" style="width: 100px" />
+## Screen shot
 
-### Installation
+<img src="https://github.com/manhhailua/meteor-react-mui-starter-app/raw/master/public/screen-shot.png" alt="mobile-screen-shot" />
+
+## Installation
 
 Ensure that you have `git` and `meteor` installed.
 
@@ -20,3 +21,11 @@ meteor yarn install
 
 meteor
 ```
+
+## Author
+
+Manh Pham <manhhailua@gmail.com>
+
+## License
+
+MIT
