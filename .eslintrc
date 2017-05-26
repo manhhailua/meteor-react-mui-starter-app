@@ -18,6 +18,7 @@
     "import/no-extraneous-dependencies": 0,
     "import/extensions": 0,
     "no-underscore-dangle": 0,
+    "react/jsx-filename-extension": 0,
     "react/forbid-prop-types": [
       1,
       {

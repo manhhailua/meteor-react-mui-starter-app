@@ -2,8 +2,9 @@
  * Created by manhhailua on 1/2/17.
  */
 
-import React, { Component, PropTypes } from 'react';
 import Paper from 'material-ui/Paper';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import './Content.css';
 
 class Content extends Component {
