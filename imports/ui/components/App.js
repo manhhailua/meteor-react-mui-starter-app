@@ -2,15 +2,30 @@
  * Created by manhhailua on 1/1/17.
  */
 
+import createBrowserHistory from 'history/createBrowserHistory';
 import React, { Component } from 'react';
-import Routes from './Routes';
+import { Route, Router, Switch } from 'react-router';
+import NotFound from '../pages/404';
+import Home from '../pages/Home';
+import Order from '../pages/Order';
+import Shopping from '../pages/Shopping';
+
+const history = createBrowserHistory();
 
 // App component - represents the whole application
 class App extends Component {
 
   render() {
     return (
-      <Routes />
+      <Router history={history}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/home" component={Home} />
+          <Route path="/shopping" component={Shopping} />
+          <Route path="/order" component={Order} />
+          <Route component={NotFound} />
+        </Switch>
+      </Router>
     );
   }
 
