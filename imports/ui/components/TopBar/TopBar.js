@@ -32,7 +32,7 @@ class TopBar extends Component {
       <Paper>
         {/* Main Application Bar */}
         <AppBar
-          title="MRM Start App"
+          title="MRM Starter App"
           iconElementRight={
             <IconButton>
               <FontIcon className="material-icons">more_vert</FontIcon>
