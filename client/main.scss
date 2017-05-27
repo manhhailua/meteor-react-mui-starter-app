@@ -1,7 +1,11 @@
-/* CSS declarations go here */
+// Variables declaration
 
+// Global styles
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   overflow: hidden;
 }
+
+// App styles
+@import "../imports/ui/components/App/App";

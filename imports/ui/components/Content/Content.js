@@ -5,7 +5,6 @@
 import Paper from 'material-ui/Paper';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import './Content.scss';
 
 class Content extends Component {
 

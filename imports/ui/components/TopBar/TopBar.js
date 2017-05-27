@@ -12,7 +12,6 @@ import List from 'material-ui/List/List';
 import ListItem from 'material-ui/List/ListItem';
 import Paper from 'material-ui/Paper';
 import React, { Component } from 'react';
-import './TopBar.scss';
 
 class TopBar extends Component {
 

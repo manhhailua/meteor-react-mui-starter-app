@@ -3,6 +3,12 @@
   "parserOptions": {
     "allowImportExportEverywhere": true
   },
+  "env": {
+    "es6": true,
+    "meteor": true,
+    "node": true,
+    "browser": true
+  },
   "plugins": [
     "meteor"
   ],

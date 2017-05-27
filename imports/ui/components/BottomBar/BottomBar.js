@@ -7,8 +7,7 @@ import FontIcon from 'material-ui/FontIcon';
 import Paper from 'material-ui/Paper';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { withRouter } from 'react-router';
-import './BottomBar.scss';
+import { withRouter } from 'react-router-dom';
 
 class BottomBar extends Component {
 
