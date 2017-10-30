@@ -2,7 +2,7 @@
  * Created by manhhailua on 1/5/17.
  */
 
-import Paper from 'material-ui/Paper';
+import { Paper } from 'material-ui';
 import React, { Component } from 'react';
 import BottomBar from '../components/BottomBar';
 import Content from '../components/Content';

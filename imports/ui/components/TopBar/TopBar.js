@@ -2,16 +2,10 @@
  * Created by manhhailua on 1/1/17.
  */
 
-import AppBar from 'material-ui/AppBar';
-import Avatar from 'material-ui/Avatar';
-import Divider from 'material-ui/Divider';
-import Drawer from 'material-ui/Drawer';
-import FontIcon from 'material-ui/FontIcon';
-import IconButton from 'material-ui/IconButton';
-import List from 'material-ui/List/List';
-import ListItem from 'material-ui/List/ListItem';
-import Paper from 'material-ui/Paper';
+import { AppBar, Avatar, Divider, Drawer, FontIcon, IconButton, Paper } from 'material-ui';
+import { List, ListItem } from 'material-ui/List';
 import React, { Component } from 'react';
+import './TopBar.scss';
 
 class TopBar extends Component {
   constructor() {
@@ -22,9 +16,9 @@ class TopBar extends Component {
     };
   }
 
-  toggleLeftDrawer() {
+  toggleLeftDrawer = () => {
     this.setState({ isLeftDrawerOpened: !this.state.isLeftDrawerOpened });
-  }
+  };
 
   render() {
     return (
@@ -37,14 +31,14 @@ class TopBar extends Component {
               <FontIcon className="material-icons">more_vert</FontIcon>
             </IconButton>
           }
-          onLeftIconButtonTouchTap={() => this.toggleLeftDrawer()}
+          onLeftIconButtonTouchTap={this.toggleLeftDrawer}
         />
 
         {/* Left Drawer */}
         <Drawer
           open={this.state.isLeftDrawerOpened}
           docked={false}
-          onRequestChange={() => this.toggleLeftDrawer()}
+          onRequestChange={this.toggleLeftDrawer}
         >
           {/* Main Menu */}
           <List>
