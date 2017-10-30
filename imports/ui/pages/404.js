@@ -9,7 +9,6 @@ import Content from '../components/Content';
 import TopBar from '../components/TopBar';
 
 class NotFound extends Component {
-
   render() {
     return (
       <Paper>
@@ -22,7 +21,6 @@ class NotFound extends Component {
       </Paper>
     );
   }
-
 }
 
 export default NotFound;

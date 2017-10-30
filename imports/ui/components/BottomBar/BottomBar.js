@@ -10,7 +10,6 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
 class BottomBar extends Component {
-
   static propTypes = {
     history: PropTypes.object,
   };

@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 class Content extends Component {
-
   static propTypes = {
     children: PropTypes.oneOfType([
       PropTypes.array,

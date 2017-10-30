@@ -2,15 +2,14 @@
  * Created by manhpt2 on 5/27/17.
  */
 
-import chai, { expect } from 'chai';
-import chaiEnzyme from 'chai-enzyme';
-import { mount } from 'enzyme';
+import { expect } from 'chai';
+import Enzyme, { mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import { MuiThemeProvider } from 'material-ui/styles';
 import React from 'react';
-import App from '../../../imports/ui/components/App';
+import App from '../../imports/ui/components/App';
 
-// Attach chai-enzyme assertion methods
-chai.use(chaiEnzyme());
+Enzyme.configure({ adapter: new Adapter() });
 
 describe('<App />', function () {
   let wrapper = null;
@@ -18,17 +17,17 @@ describe('<App />', function () {
   before(function (done) {
     // All mui (material-ui) components need muiTheme context
     // So, we have to wrap our component inside a mui provider
-    wrapper = mount(
+    wrapper = mount((
       <MuiThemeProvider>
         <App />
-      </MuiThemeProvider>,
-    );
+      </MuiThemeProvider>
+    ));
 
     done();
   });
 
   it('has been rendered', function () {
-    expect(wrapper).to.contain(<App />);
+    expect(wrapper.contains(<App />)).to.equal(true);
   });
 
   it('has children correctly rendered', function () {
