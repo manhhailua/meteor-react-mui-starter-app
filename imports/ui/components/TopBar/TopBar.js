@@ -16,9 +16,9 @@ class TopBar extends Component {
     };
   }
 
-  toggleLeftDrawer() {
+  toggleLeftDrawer = () => {
     this.setState({ isLeftDrawerOpened: !this.state.isLeftDrawerOpened });
-  }
+  };
 
   render() {
     return (
@@ -31,14 +31,14 @@ class TopBar extends Component {
               <FontIcon className="material-icons">more_vert</FontIcon>
             </IconButton>
           }
-          onLeftIconButtonTouchTap={() => this.toggleLeftDrawer()}
+          onLeftIconButtonTouchTap={this.toggleLeftDrawer}
         />
 
         {/* Left Drawer */}
         <Drawer
           open={this.state.isLeftDrawerOpened}
           docked={false}
-          onRequestChange={() => this.toggleLeftDrawer()}
+          onRequestChange={this.toggleLeftDrawer}
         >
           {/* Main Menu */}
           <List>

@@ -26,9 +26,9 @@ class BottomBar extends Component {
     };
   }
 
-  select(index) {
+  select = (index) => {
     this.setState({ selectedIndex: index });
-  }
+  };
 
   render() {
     return (
