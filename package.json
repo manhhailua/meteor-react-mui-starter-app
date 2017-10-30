@@ -31,6 +31,7 @@
     "chai": "^4.0.0",
     "chai-enzyme": "^0.7.1",
     "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.2",
     "eslint": "^4.10.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-import-resolver-meteor": "^0.4.0",
@@ -38,8 +39,6 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-meteor": "^4.1.4",
     "eslint-plugin-react": "^7.4.0",
-    "react-addons-test-utils": "^15.6.2",
-    "react-test-renderer": "^16.0.0",
     "sinon": "^4.0.2"
   }
 }
