@@ -3,12 +3,13 @@
  */
 import { createBrowserHistory } from 'history';
 import React, { Component } from 'react';
-import { Router, Route, Switch } from 'react-router-dom';
+import { Route, Router, Switch } from 'react-router-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import NotFound from '../../pages/404';
 import Home from '../../pages/Home';
 import Order from '../../pages/Order';
 import Shopping from '../../pages/Shopping';
+import './App.scss';
 
 const history = createBrowserHistory();
 
