@@ -2,9 +2,10 @@
  * Created by manhhailua on 1/2/17.
  */
 
-import Paper from 'material-ui/Paper';
+import { Paper } from 'material-ui';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import './Content.scss';
 
 class Content extends Component {
   static propTypes = {

@@ -3,11 +3,11 @@
  */
 
 import { BottomNavigation, BottomNavigationItem } from 'material-ui/BottomNavigation';
-import FontIcon from 'material-ui/FontIcon';
-import Paper from 'material-ui/Paper';
+import { FontIcon, Paper } from 'material-ui';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import './BottomBar.scss';
 
 class BottomBar extends Component {
   static propTypes = {
