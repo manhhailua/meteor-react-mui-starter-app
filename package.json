@@ -12,6 +12,10 @@
     "test": "meteor test -p 4000 --driver-package practicalmeteor:mocha",
     "test:once": "meteor test -p 4000 --once --driver-package practicalmeteor:mocha"
   },
+  "engines": {
+    "node": ">=7.6.0",
+    "npm": ">=5.0.0"
+  },
   "dependencies": {
     "history": "^4.7.2",
     "material-ui": "^0.19.4",
