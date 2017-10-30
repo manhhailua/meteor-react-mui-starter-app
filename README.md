@@ -46,8 +46,6 @@ meteor npm run test:once
 
 SASS was integrated into this repo. So, you can use [sass](http://sass-lang.com/) or pure css in your own way.
 
-If you choose SASS for your app, please `@import` them to `/client/main.scss` or `/imports/ui/components/App/App.scss`. Do not directly import `.scss` file to your component, that causes testing failures and breaks sass global variables.
-
 ## Author
 
 Manh Pham <manhhailua@gmail.com>
