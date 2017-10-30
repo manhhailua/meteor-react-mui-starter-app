@@ -1,14 +1,16 @@
 {
   "name": "meteor-react-mui-starter-app",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "author": "Manhhailua <manhhailua@gmail.com>",
   "bugs": "https://github.com/manhhailua/meteor-react-mui-starter-app/issues",
   "repository": "https://github.com/manhhailua/meteor-react-mui-starter-app.git",
   "license": "MIT",
   "scripts": {
     "start": "meteor run",
-    "lint": "eslint .",
-    "pretest": "npm run lint --silent",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint '{client,imports,server}/**/*.{js,jsx}' --fix",
+    "lint:css": "stylelint '{client,imports}/**/*.{css,sass,scss}' --fix",
+    "pretest": "npm run lint",
     "test": "meteor test -p 4000 --driver-package practicalmeteor:mocha",
     "test:once": "meteor test -p 4000 --once --driver-package practicalmeteor:mocha"
   },
@@ -43,6 +45,8 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-meteor": "^4.1.4",
     "eslint-plugin-react": "^7.4.0",
-    "sinon": "^4.0.2"
+    "sinon": "^4.0.2",
+    "stylelint": "^8.2.0",
+    "stylelint-config-standard": "^17.0.0"
   }
 }
