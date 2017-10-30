@@ -3,7 +3,7 @@
  */
 import { createBrowserHistory } from 'history';
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import NotFound from '../../pages/404';
 import Home from '../../pages/Home';
@@ -17,10 +17,9 @@ const history = createBrowserHistory();
 injectTapEventPlugin();
 
 class App extends Component {
-
   render() {
     return (
-      <BrowserRouter history={history}>
+      <Router history={history}>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/home" component={Home} />
@@ -28,10 +27,9 @@ class App extends Component {
           <Route path="/order" component={Order} />
           <Route component={NotFound} />
         </Switch>
-      </BrowserRouter>
+      </Router>
     );
   }
-
 }
 
 export default App;
