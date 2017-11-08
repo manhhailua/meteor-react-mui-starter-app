@@ -15,8 +15,8 @@
     "test:once": "meteor test -p 4000 --once --driver-package practicalmeteor:mocha"
   },
   "engines": {
-    "node": ">=7.6.0",
-    "npm": ">=5.0.0"
+    "node": ">=8.8.1",
+    "npm": ">=5.4.2"
   },
   "dependencies": {
     "history": "^4.7.2",
